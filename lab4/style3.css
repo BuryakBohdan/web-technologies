@@ -1,0 +1,39 @@
+/* 3.1*/
+a {
+    color: violet;
+}
+
+/* 3.2*/
+.main-item {
+    color: green;
+}
+
+/* 3.3*/
+.square-marker {
+    list-style-type: square;
+}
+
+/* 3.4*/
+.custom-marker {
+    list-style-image: url(li.svg);
+}
+
+/* 3.5*/
+ul ul {
+    list-style-type: none;
+}
+
+/* 3.6*/
+.square-marker a {
+    text-decoration: none;
+}
+
+/* 3.7*/
+.different-list {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+ol {
+    list-style-position: inside;
+}
