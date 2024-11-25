@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+
+}
+
+.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    padding: 0 250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.rounded {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+#block1 {
+    border-radius: 15px;
+}
+
+#block2 {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#block3 {
+    border-radius: 30px 150px 30px 150px;
+}
+
+#block4 {
+    border-top: 20px solid green;
+    border-bottom: 20px solid green;
+    border-left: 15px solid lime;
+    border-right: 15px solid lime;
+    border-radius: 50px 50px 50px 50px;
+
+    border-top-right-radius: 100% 25%;
+    border-top-left-radius: 100% 25%;
+    border-bottom-left-radius: 100% 25%;
+    border-bottom-right-radius: 100% 25%;
+}
+
+#block5 {
+    border-top: 15px solid lime;
+    border-bottom: 15px solid lime;
+    border-left: 15px solid green;
+    border-right: 15px solid green;
+    border-radius: 50px 50px 50px 50px;
+
+    border-top-right-radius: 100% 5%;
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius: 100% 5%;
+    border-bottom-right-radius: 100% 50%;
+}
+
+#block6 {
+    border-top: 15px solid lime;
+    border-bottom: 15px solid lime;
+    border-left: 15px solid green;
+    border-right: 15px solid lime;
+    border-radius: 50px 50px 50px 50px;
+
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 100%;
+}
+
+/* Стилі для блоків з border-image */
+.border-image {
+    border: 10px solid transparent;
+    padding: 10px;
+}
+
+#block7 {
+    border: double #ffbd67 15px;
+    border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png") 18 18 18 18;
+}
+#block8 {
+    border: double #ffbd67 15px;
+    border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png") 15 / 15px round;
+}
+#block9 {
+    border: double #ffbd67 15px;
+    border-image: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png") 27 / 15px round;
+}
+#block10 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/circle.png") 20 10 / 20px stretch;
+}
+#block11 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/circle.png") 9 25 / 20px round;
+}
+#block12 {
+    border: double #ffbd67 15px;
+    border-image: url("../img/circle.png") 5 17 / 20px stretch;
+}
+

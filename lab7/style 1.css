@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 440px; /* Ширина контейнера для розташування блоків у 2 стовпчики */
+}
+
+.block {
+    width: 200px;
+    height: 60px;
+    line-height: 60px; /* Вертикальне вирівнювання тексту */
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block; /* Блоки відображаються в рядок */
+    margin: 5px;
+    vertical-align: top; /* Вирівнювання блоків по верхньому краю */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

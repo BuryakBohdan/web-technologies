@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.block {
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    position: relative;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.block-1 {
+    background: linear-gradient(to bottom left, orange 2%, blue 30%, yellow 70%, green 95%);
+}
+
+
+.block-2 {
+    background-image: linear-gradient(45deg, green 20%, transparent 25%, transparent 25%, transparent 75%, orange 75%, blue 100%),
+    linear-gradient(50deg, yellow 20%, transparent 25%, transparent 25%, transparent 75%, purple 75%, orange 100%);
+    background-size: 100px 100px;
+    background-position: 5px 5px, 50px 50px;
+}
+
+
+.block-3 {
+    background-image: linear-gradient(to right, green 25%, transparent 50%, transparent 100%),
+    linear-gradient(to right, transparent 50%, blue 50%, yellow 100%);
+    background-size: 105px;
+    background-repeat: repeat;
+}
+
+
+.block-4 {
+    background-image: linear-gradient(to left top, yellow 35%, transparent 10%, transparent 100%),
+    linear-gradient(to right top, green 25%, transparent 10%, transparent 100%),
+    linear-gradient(to right bottom, orange 25%, transparent 50%, transparent 70%),
+    linear-gradient(to left bottom, blue 25%, transparent 60%, transparent 100%);
+}
+
+
+.block-5 {
+    background-image:linear-gradient(to right top, rebeccapurple 10%, transparent 30%, transparent 90%),
+    linear-gradient(
+            350deg,
+            hsl(44deg 100% 38%) 0%,
+            hsl(43, 46%, 60%) 5%,
+            hsl(335deg 44% 41%) 16%,
+            hsl(290deg 29% 31%) 24%,
+            hsl(120, 55%, 54%) 32%,
+            hsl(41, 100%, 65%) 39%,
+            hsl(321, 45%, 46%) 47%,
+            hsl(263, 31%, 50%) 56%,
+            hsl(219, 97%, 45%) 64%,
+            hsl(109, 68%, 55%) 73%,
+            hsl(50, 100%, 50%) 82%,
+            hsl(21, 79%, 45%) 91%,
+            hsl(0, 100%, 50%) 100%
+    );
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}

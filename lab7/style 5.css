@@ -1,0 +1,109 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d3d3d3;
+}
+
+/* Контейнер віджета */
+.weather-widget {
+    width: 300px;
+    height: 380px;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* Навігаційні стрілки */
+.navigation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3; /* Найвищий шар */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.arrow {
+    font-size: 20px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px 8px;
+    border-radius: 3px;
+    user-select: none;
+    color: black;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Чорний квадрат із числом */
+.temperature-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 180px;
+    height: 180px;
+    background: black;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Зображення хмар */
+.clouds {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 30px;
+    left: 80px;
+    background: url('cloud.png') no-repeat center / cover;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    opacity: 0.9;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+/* Прогноз на тиждень */
+.week-forecast {
+    position: absolute;
+    bottom: 0;
+    width: 280px;
+    height: 70px;
+    left: 10px;
+    background: rgba(200, 200, 200, 0.9);
+    z-index: 0; /* Найнижчий шар */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.day {
+    text-align: center;
+}
+
+.day span {
+    font-size: 16px;
+    font-weight: normal;
+}

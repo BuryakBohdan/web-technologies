@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+
+}
+
+.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.container {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.column {
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+    border-left: 5px dotted red;
+    vertical-align: top;
+}
+
+.column:first-child {
+    border-left: none;
+}
+
+.float-image {
+    width: 200px;
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.container div:nth-child(1) img {
+    float: right;
+}
+
+.container div:nth-child(2) img {
+    float: left;
+}
+
+ul {
+    margin: 0;
+}
+
+.image_list {
+    list-style: none;
+    float: right;
+}

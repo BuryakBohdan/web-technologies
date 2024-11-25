@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Burger Menu */
+.menu-toggle {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    width: 25px;
+    height: 18px;
+    position: relative;
+}
+
+.burger-menu span,
+.burger-menu::before,
+.burger-menu::after {
+    background-color: #333;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.burger-menu::before {
+    content: "";
+    top: -6px;
+}
+
+.burger-menu::after {
+    content: "";
+    top: 6px;
+}
+
+/* Menu Toggle Behavior */
+.menu-toggle:checked ~ .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.portfolio,
+.services,
+.journal {
+    padding: 100px 20px 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid,
+.service-grid,
+.journal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item,
+.service-item,
+.journal-item {
+    flex: 1 1 calc(25% - 20px);
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    .nav {
+        display: none;
+    }
+
+    .portfolio-item,
+    .service-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .journal-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-item,
+    .service-item {
+        flex: 1 1 100%;
+    }
+}
